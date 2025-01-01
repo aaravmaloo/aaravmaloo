@@ -1,34 +1,68 @@
-<h1 align="center">A Software Developer Aarav Maloo</h1>
-<h3 align="center">A passionate and a professional backend software dev</h3>
+<br clear="both">
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=aaravmalooking&label=Profile%20views&color=0e75b6&style=flat" alt="aaravmalooking" /> </p>
+<h1 align="center">A Passionate Programmer</h1>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=aaravmalooking" alt="aaravmalooking" /></a> </p>
+###
 
-<p align="left"> <a href="https://twitter.com/twitter.com/aaravmalooking" target="blank"><img src="https://img.shields.io/twitter/follow/twitter.com/aaravmalooking?logo=twitter&style=for-the-badge" alt="twitter.com/aaravmalooking" /></a> </p>
+<h2 align="center">Aarav Maloo</h2>
 
-- 🌱 I’m currently learning **Rust, Java**
+###
 
-- 👨‍💻 All of my projects are available at [https://github.com/aaravmalooking](https://github.com/aaravmalooking)
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app?username=aaravmalooking&theme=onestar&column=-1&row=1&margin-w=8&margin-h=8&no-bg=true&no-frame=true&order=4" height="150" alt="trophy graph"  />
+  <img src="https://github-readme-stats.vercel.app/api?username=aaravmalooking&hide_title=false&hide_rank=false&show_icons=false&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=true&order=1&custom_title=Stats" height="126" alt="stats graph"  />
+  <img src="https://streak-stats.demolab.com?user=aaravmalooking&locale=en&mode=daily&theme=dracula&hide_border=true&border_radius=5&order=3" height="126" alt="streak graph"  />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=aaravmalooking&radius=16&theme=material-palenight&area=true&order=5&hide_border=true&hide_title=false" height="300" alt="activity-graph graph"  />
+</div>
 
-- 💬 Ask me about **Python, C**
+###
 
-- 📫 How to reach me **aaravmaloov@gmail.com**
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" alt="linux logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" height="40" alt="rust logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" height="40" alt="git logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg" height="40" alt="java logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-plain.svg" height="40" alt="intellij logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" height="40" alt="pycharm logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-plain.svg" height="40" alt="bash logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="40" alt="c logo"  />
+</div>
 
-- ⚡ A Joke **Programming**
+###
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://dev.to/https://dev.to/aaravmalooking" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" alt="https://dev.to/aaravmalooking" height="30" width="40" /></a>
-<a href="https://twitter.com/twitter.com/aaravmalooking" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="twitter.com/aaravmalooking" height="30" width="40" /></a>
-<a href="https://instagram.com/https://www.instagram.com/aaravmalooking/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="https://www.instagram.com/aaravmalooking/" height="30" width="40" /></a>
-</p>
+<div align="left">
+  <a href="https://twitter.com/aaravmalooking" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/twitter/default.svg" width="52" height="40" alt="twitter logo"  />
+  </a>
+  <a href="https://instagram.com/aaravmalooking" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="52" height="40" alt="instagram logo"  />
+  </a>
+  <a href="aaravmaloov@gmail.com" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/gmail/default.svg" width="52" height="40" alt="gmail logo"  />
+  </a>
+</div>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://www.rust-lang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg" alt="rust" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> </p>
+###
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=aaravmalooking&show_icons=true&locale=en&layout=compact" alt="aaravmalooking" /></p>
+<div align="left">
+  <a href="https://open.spotify.com/user/31bvxgitggoeqcqq4xfet62x7jb4">
+    <img src="https://spotify-recently-played-readme.vercel.app/api?user=31bvxgitggoeqcqq4xfet62x7jb4&count=2&unique=true" alt="Spotify recently played"  />
+  </a>
+</div>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=aaravmalooking&show_icons=true&locale=en" alt="aaravmalooking" /></p>
+###
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=aaravmalooking&" alt="aaravmalooking" /></p>
+<br clear="both">
+
+<img src="https://raw.githubusercontent.com/aaravmalooking/aaravmalooking/output/snake.svg" alt="Snake animation" />
+
+###
