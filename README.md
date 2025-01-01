@@ -63,6 +63,6 @@
 
 <br clear="both">
 
-<img src="https://raw.githubusercontent.com/aaravmalooking/aaravmalooking/snake.yml" alt="Snake animation" />
+
 
 ###
