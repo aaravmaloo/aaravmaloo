@@ -1,6 +1,6 @@
 <br clear="both">
 
-<p align="center">A Professional Artificial Intelligence Developer</p>
+<p align="center">A Artificial Intelligence Developer</p>
 
 ###
 
