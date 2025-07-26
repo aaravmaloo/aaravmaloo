@@ -1,1 +1,5 @@
-[![Spotify](https://aaravmaloo.vercel.app/api/spotify)](https://open.spotify.com/user/31bvxgitggoeqcqq4xfet62x7jb4)
+<div align="center">
+  <img src="https://novatorem-repo-fork.vercel.app/api/spotify?theme=dark&spin=true" alt="Widget with the current Spotify song"  />
+</div>
+
+###
