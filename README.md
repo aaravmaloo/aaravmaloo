@@ -57,10 +57,3 @@
 
 ###
 
-<div align="center">
-  <a href="https://open.spotify.com/user/31bvxgitggoeqcqq4xfet62x7jb4">
-    <img src="https://spotify-recently-played-readme.vercel.app/api?user=31bvxgitggoeqcqq4xfet62x7jb4&count=2&unique=true" alt="Spotify recently played"  />
-  </a>
-</div>
-
-###
