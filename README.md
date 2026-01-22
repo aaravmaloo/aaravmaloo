@@ -5,7 +5,7 @@
 <div align="center">
   <img src="https://visitor-badge.laobi.icu/badge?page_id=aaravmaloo.aaravmaloo" />
   <a href="https://github.com/aaravmaloo/apm">
-    <img src="https://img.shields.io/badge/apm-v7-blue" />
+    <img src="https://img.shields.io/badge/apm-v8.2-blue" />
   <a href="https://github.com/aaravmaloo/brliant_calc">
     <img src="https://img.shields.io/badge/brliant_calc-v3.1.1-blue" />
     
