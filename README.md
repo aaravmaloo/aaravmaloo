@@ -9,8 +9,8 @@
 <div align="center">
 
 <img src="https://github-readme-stats-delta-henna-50.vercel.app/api?username=aaravmaloo&show_icons=true&count_private=true&include_all_commits=true&theme=highcontrast&hide_border=true" height="150"/>
-<img src="https://github-readme-stats-delta-henna-50.vercel.app/api/top-langs?username=aaravmaloo&layout=compact&theme=highcontrast" height="150"/>
-<img src="https://streak-stats.demolab.com?user=aaravmaloo&theme=highcontrast" height="150"/>
+<img src="https://github-readme-stats-delta-henna-50.vercel.app/api/top-langs?username=aaravmaloo&layout=compact&theme=highcontrast&hide_border=true" height="150"/>
+<img src="https://streak-stats.demolab.com?user=aaravmaloo&theme=highcontrast&hide_border=true" height="150"/>
 
 </div>
 
