@@ -24,7 +24,7 @@
 <div align="center">
 
 <a href="https://www.linkedin.com/in/aaravmaloo/"><img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="40"/></a>
-<a href="https://twitter.com/aaravmaloo06"><img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/twitter/default.svg" width="40"/></a>
+<a href="https://twitter.com/aaravmaloo06"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/x/ffffff"/><img src="https://cdn.simpleicons.org/x/000000" width="34"/></picture></a>
 <a href="https://www.youtube.com/@wq_neovim"><img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/youtube/default.svg" width="40"/></a>
 <a href="https://stackoverflow.com/users/29991486/aarav-maloo"><img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/stackoverflow/default.svg" width="40"/></a>
 <a href="https://instagram.com/aaravmaloo06"><img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="40"/></a>
