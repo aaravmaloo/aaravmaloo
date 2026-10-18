@@ -32,7 +32,11 @@ jobs:
       # README shows two 480px columns side by side. Each column is one SVG so
       # sections stack without gaps; keep both columns roughly the same height.
 
-      - name: Left column
+      # Contribution calendars (header strip, isocalendar, yearly calendar) come back
+      # in GitHub's light-theme greens, so each column is rendered twice: as-is and
+      # recoloured for dark mode. The README picks one with <picture>.
+
+      - name: Left column (light)
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
@@ -49,8 +53,28 @@ jobs:
           plugin_notable_from: organization
           plugin_notable_types: commit, pull_request
 
-      # Right column has the contribution calendars, which come back in GitHub's
-      # light-theme greens, so it is rendered twice: as-is and recoloured for dark mode
+      - name: Left column (dark)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: aaravmaloo
+          output_action: none
+          filename: metrics/left-dark.svg
+          template: classic
+          config_timezone: Asia/Kolkata
+          base: header, activity, community, repositories
+          config_order: base.header, base.activity+community, base.repositories, repositories, notable
+          plugin_repositories: yes
+          plugin_repositories_featured: apms-org/cli, apms-org/gui, apms-org/extension, vrai, revera, blob
+          plugin_notable: yes
+          plugin_notable_from: organization
+          plugin_notable_types: commit, pull_request
+          extras_css: |
+            [fill="#ebedf0"] { fill: #161b22 }
+            [fill="#9be9a8"] { fill: #0e4429 }
+            [fill="#40c463"] { fill: #006d32 }
+            [fill="#30a14e"] { fill: #26a641 }
+            [fill="#216e39"] { fill: #39d353 }
 
       - name: Right column (light)
         uses: lowlighter/metrics@latest
@@ -74,7 +98,7 @@ jobs:
             cefense-bench-clean-libs, cefense-bench-secbench-patched, cefense-bench-dvna,
             cefense-bench-traps-js, cefense-bench-ghsa, cefense-bench-secbench
           plugin_calendar: yes
-          plugin_calendar_limit: 0 # every year since joining GitHub
+          plugin_calendar_limit: 2 # this year and last
           plugin_followup: yes
           plugin_followup_sections: repositories, user
 
@@ -99,7 +123,7 @@ jobs:
             cefense-bench-clean-libs, cefense-bench-secbench-patched, cefense-bench-dvna,
             cefense-bench-traps-js, cefense-bench-ghsa, cefense-bench-secbench
           plugin_calendar: yes
-          plugin_calendar_limit: 0
+          plugin_calendar_limit: 2
           plugin_followup: yes
           plugin_followup_sections: repositories, user
           # GitHub's light calendar palette -> its dark palette

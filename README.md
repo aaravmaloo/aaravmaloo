@@ -8,7 +8,10 @@
 
 <div align="center">
 
-<img src="metrics/left.svg" width="49%" align="top"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aaravmaloo/aaravmaloo/main/metrics/left-dark.svg"/>
+  <img src="metrics/left.svg" width="49%" align="top"/>
+</picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aaravmaloo/aaravmaloo/main/metrics/right-dark.svg"/>
   <img src="metrics/right.svg" width="49%" align="top"/>
