@@ -1,10 +1,10 @@
-# Renders the profile stats into metrics/ (left.svg, right.svg, right-dark.svg)
+# Renders the profile stats into metrics/ (left, right, and a -dark variant of each)
 # Needs a repo secret METRICS_TOKEN (classic PAT with public_repo + read:user)
 #
 # Not used on purpose: achievements, activity, habits. They are broken upstream
 # (GitHub retired Projects classic and stripped commits from PushEvent payloads)
-# and would show red "Unexpected error" boxes. Stargazers is skipped too, its
-# chart is empty and unreadable at this star count.
+# and would show red "Unexpected error" boxes. Stargazers and followup are skipped
+# too: unreadable at README size.
 
 name: Metrics
 
@@ -29,12 +29,15 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      # README shows two 480px columns side by side. Each column is one SVG so
-      # sections stack without gaps; keep both columns roughly the same height.
-
-      # Contribution calendars (header strip, isocalendar, yearly calendar) come back
-      # in GitHub's light-theme greens, so each column is rendered twice: as-is and
-      # recoloured for dark mode. The README picks one with <picture>.
+      # README shows two 480px columns side by side, scaled down to ~86%. Each
+      # column is one SVG so sections stack without gaps; keep the two columns
+      # roughly the same height.
+      #
+      # Each column is rendered twice, picked by <picture> in the README:
+      # - light: GitHub light text colours
+      # - dark: GitHub dark text colours, and the contribution calendars (which
+      #   come back in light-theme greens) recoloured to the dark palette
+      # Both bump the classic template's 14px text so it survives the scaling.
 
       - name: Left column (light)
         uses: lowlighter/metrics@latest
@@ -45,13 +48,19 @@ jobs:
           filename: metrics/left.svg
           template: classic
           config_timezone: Asia/Kolkata
-          base: header, activity, community, repositories
-          config_order: base.header, base.activity+community, base.repositories, repositories, notable
+          base: header, activity, community
+          config_order: base.header, base.activity+community, repositories
           plugin_repositories: yes
           plugin_repositories_featured: apms-org/cli, apms-org/gui, apms-org/extension, vrai, revera, blob
-          plugin_notable: yes
-          plugin_notable_from: organization
-          plugin_notable_types: commit, pull_request
+          extras_css: &light |
+            svg { font-size: 16px; color: #1f2328 }
+            h1 { font-size: 22px }
+            h2 { font-size: 18px }
+            h1, h2, h3 { color: #0969da }
+            .field svg { fill: #59636e }
+            .repository .description, .repository .infos { font-size: 15px; color: #59636e }
+            .repository .name span:last-child { font-size: 12px; color: #59636e }
+            .field.language.details small { color: #59636e }
 
       - name: Left column (dark)
         uses: lowlighter/metrics@latest
@@ -62,14 +71,19 @@ jobs:
           filename: metrics/left-dark.svg
           template: classic
           config_timezone: Asia/Kolkata
-          base: header, activity, community, repositories
-          config_order: base.header, base.activity+community, base.repositories, repositories, notable
+          base: header, activity, community
+          config_order: base.header, base.activity+community, repositories
           plugin_repositories: yes
           plugin_repositories_featured: apms-org/cli, apms-org/gui, apms-org/extension, vrai, revera, blob
-          plugin_notable: yes
-          plugin_notable_from: organization
-          plugin_notable_types: commit, pull_request
-          extras_css: |
+          extras_css: &dark |
+            svg { font-size: 16px; color: #c9d1d9 }
+            h1 { font-size: 22px }
+            h2 { font-size: 18px }
+            h1, h2, h3 { color: #58a6ff }
+            .field svg { fill: #8b949e }
+            .repository .description, .repository .infos { font-size: 15px; color: #8b949e }
+            .repository .name span:last-child { font-size: 12px; color: #8b949e }
+            .field.language.details small { color: #8b949e }
             [fill="#ebedf0"] { fill: #161b22 }
             [fill="#9be9a8"] { fill: #0e4429 }
             [fill="#40c463"] { fill: #006d32 }
@@ -86,7 +100,7 @@ jobs:
           template: classic
           config_timezone: Asia/Kolkata
           base: ""
-          config_order: isocalendar, languages, calendar, followup
+          config_order: isocalendar, languages, calendar, notable
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           plugin_languages: yes
@@ -94,13 +108,15 @@ jobs:
           plugin_languages_other: yes
           plugin_languages_details: bytes-size, percentage
           # Third-party benchmark corpora, not my code
-          plugin_languages_skipped: >-
+          plugin_languages_skipped: &skipped >-
             cefense-bench-clean-libs, cefense-bench-secbench-patched, cefense-bench-dvna,
             cefense-bench-traps-js, cefense-bench-ghsa, cefense-bench-secbench
           plugin_calendar: yes
           plugin_calendar_limit: 2 # this year and last
-          plugin_followup: yes
-          plugin_followup_sections: repositories, user
+          plugin_notable: yes
+          plugin_notable_from: organization
+          plugin_notable_types: commit, pull_request
+          extras_css: *light
 
       - name: Right column (dark)
         uses: lowlighter/metrics@latest
@@ -112,27 +128,20 @@ jobs:
           template: classic
           config_timezone: Asia/Kolkata
           base: ""
-          config_order: isocalendar, languages, calendar, followup
+          config_order: isocalendar, languages, calendar, notable
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           plugin_languages: yes
           plugin_languages_limit: 8
           plugin_languages_other: yes
           plugin_languages_details: bytes-size, percentage
-          plugin_languages_skipped: >-
-            cefense-bench-clean-libs, cefense-bench-secbench-patched, cefense-bench-dvna,
-            cefense-bench-traps-js, cefense-bench-ghsa, cefense-bench-secbench
+          plugin_languages_skipped: *skipped
           plugin_calendar: yes
           plugin_calendar_limit: 2
-          plugin_followup: yes
-          plugin_followup_sections: repositories, user
-          # GitHub's light calendar palette -> its dark palette
-          extras_css: |
-            [fill="#ebedf0"] { fill: #161b22 }
-            [fill="#9be9a8"] { fill: #0e4429 }
-            [fill="#40c463"] { fill: #006d32 }
-            [fill="#30a14e"] { fill: #26a641 }
-            [fill="#216e39"] { fill: #39d353 }
+          plugin_notable: yes
+          plugin_notable_from: organization
+          plugin_notable_types: commit, pull_request
+          extras_css: *dark
 
       - name: Commit renders
         run: |
