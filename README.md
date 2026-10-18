@@ -8,14 +8,11 @@
 
 <div align="center">
 
-<img src="metrics/overview.svg" width="49%" align="top"/>
-<img src="metrics/activity.svg" width="49%" align="top"/>
-
-<img src="metrics/projects.svg" width="49%" align="top"/>
-<img src="metrics/calendar.svg" width="49%" align="top"/>
-
-<img src="metrics/stars.svg" width="49%" align="top"/>
-<img src="metrics/issues.svg" width="49%" align="top"/>
+<img src="metrics/left.svg" width="49%" align="top"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aaravmaloo/aaravmaloo/main/metrics/right-dark.svg"/>
+  <img src="metrics/right.svg" width="49%" align="top"/>
+</picture>
 
 </div>
 
