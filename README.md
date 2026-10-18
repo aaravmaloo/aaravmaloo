@@ -8,20 +8,18 @@
 
 <div align="center">
 
-<img src="https://github-readme-stats-delta-henna-50.vercel.app/api?username=aaravmaloo&show_icons=true&count_private=true&include_all_commits=true&theme=highcontrast&hide_border=true" height="150"/>
-<img src="https://github-readme-stats-delta-henna-50.vercel.app/api/top-langs?username=aaravmaloo&layout=compact&theme=highcontrast&hide_border=true" height="150"/>
-<img src="https://streak-stats.demolab.com?user=aaravmaloo&theme=highcontrast&hide_border=true" height="150"/>
+<img src="metrics/overview.svg" width="49%" align="top"/>
+<img src="metrics/activity.svg" width="49%" align="top"/>
 
-</div>
+<img src="metrics/projects.svg" width="49%" align="top"/>
+<img src="metrics/calendar.svg" width="49%" align="top"/>
 
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=aaravmaloo&theme=high-contrast&hide_border=true" height="280"/>
+<img src="metrics/stars.svg" width="49%" align="top"/>
+<img src="metrics/issues.svg" width="49%" align="top"/>
 
 </div>
 
 ---
-
 
 <div align="center">
 
@@ -48,7 +46,7 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="36"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="36"/>
 <img src="https://cdn.simpleicons.org/html5/E34F26" height="36"/>
-<img src="https://cdn.simpleicons.org/css3/1572B6" height="36"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="36"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="36"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="36"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="36"/>

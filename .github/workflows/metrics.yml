@@ -1,0 +1,132 @@
+# Goes in aaravmaloo/aaravmaloo at .github/workflows/metrics.yml
+# Needs a repo secret METRICS_TOKEN (classic PAT with public_repo + read:user)
+#
+# Not used on purpose: achievements, activity, habits. They are broken upstream
+# (GitHub retired Projects classic and stripped commits from PushEvent payloads)
+# and would show red "Unexpected error" boxes.
+
+name: Metrics
+
+on:
+  schedule:
+    - cron: "30 0 * * *" # 06:00 IST, daily
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/metrics.yml]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: metrics
+  cancel-in-progress: true
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      # Each step renders one SVG into /metrics_renders; the last step commits them all at once
+
+      - name: Overview
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: aaravmaloo
+          output_action: none
+          filename: metrics/overview.svg
+          template: classic
+          config_timezone: Asia/Kolkata
+          base: header, activity, community, repositories, metadata
+
+      - name: Commit calendar + languages
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: aaravmaloo
+          output_action: none
+          filename: metrics/activity.svg
+          template: classic
+          config_timezone: Asia/Kolkata
+          base: ""
+          config_order: isocalendar, languages
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_other: yes
+          plugin_languages_details: bytes-size, percentage
+          # Third-party benchmark corpora, not my code
+          plugin_languages_skipped: >-
+            cefense-bench-clean-libs, cefense-bench-secbench-patched, cefense-bench-dvna,
+            cefense-bench-traps-js, cefense-bench-ghsa, cefense-bench-secbench
+
+      - name: Featured projects
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: aaravmaloo
+          output_action: none
+          filename: metrics/projects.svg
+          template: classic
+          config_timezone: Asia/Kolkata
+          base: ""
+          plugin_repositories: yes
+          plugin_repositories_featured: vrai, revera, blob, xe
+
+      - name: Contribution calendar
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: aaravmaloo
+          output_action: none
+          filename: metrics/calendar.svg
+          template: classic
+          config_timezone: Asia/Kolkata
+          base: ""
+          plugin_calendar: yes
+          plugin_calendar_limit: 0 # every year since joining GitHub
+
+      - name: Stargazers
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: aaravmaloo
+          output_action: none
+          filename: metrics/stars.svg
+          template: classic
+          config_timezone: Asia/Kolkata
+          base: ""
+          plugin_stargazers: yes
+          plugin_stargazers_days: 60
+          plugin_stargazers_charts: yes
+
+      - name: Issues, PRs + notable contributions
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: aaravmaloo
+          output_action: none
+          filename: metrics/issues.svg
+          template: classic
+          config_timezone: Asia/Kolkata
+          base: ""
+          config_order: followup, notable
+          plugin_followup: yes
+          plugin_followup_sections: repositories, user
+          plugin_notable: yes
+          plugin_notable_from: all
+          plugin_notable_types: commit, pull_request
+
+      - name: Commit renders
+        if: ${{ !cancelled() }}
+        run: |
+          mkdir -p metrics
+          cp /metrics_renders/metrics/*.svg metrics/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add metrics
+          git diff --cached --quiet || git commit -m "chore: update metrics"
+          git push
