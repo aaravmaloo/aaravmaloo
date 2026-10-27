@@ -46,15 +46,15 @@ h1, h2, h3 { color: #58a6ff }
                                     <rect class="day" x="15" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                     <rect class="day" x="30" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                     <rect class="day" x="45" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
-                                    <rect class="day" x="60" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
+                                    <rect class="day" x="60" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
                                     <rect class="day" x="75" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
-                                    <rect class="day" x="90" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
-                                    <rect class="day" x="105" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
-                                    <rect class="day" x="120" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
+                                    <rect class="day" x="90" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="105" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
+                                    <rect class="day" x="120" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                                     <rect class="day" x="135" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
-                                    <rect class="day" x="150" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
-                                    <rect class="day" x="165" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
-                                    <rect class="day" x="180" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
+                                    <rect class="day" x="150" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
+                                    <rect class="day" x="165" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
+                                    <rect class="day" x="180" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                                     <rect class="day" x="195" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                                 </g>
                             </svg>
@@ -221,7 +221,7 @@ h1, h2, h3 { color: #58a6ff }
                                     </svg>
                                     <div class="name">
                                         <span>apms-org/gui</span>
-                                        <span>created 27 days ago</span>
+                                        <span>created 28 days ago</span>
                                     </div>
                                 </div>
                                 <div class="field description">Repository for GUI of APM.</div>
@@ -268,7 +268,7 @@ h1, h2, h3 { color: #58a6ff }
                                     </svg>
                                     <div class="name">
                                         <span>apms-org/extension</span>
-                                        <span>created 27 days ago</span>
+                                        <span>created 28 days ago</span>
                                     </div>
                                 </div>
                                 <div class="field description">Browser Extension for APM.</div>
@@ -315,7 +315,7 @@ h1, h2, h3 { color: #58a6ff }
                                     </svg>
                                     <div class="name">
                                         <span>aaravmaloo/vrai</span>
-                                        <span>created 12 days ago</span>
+                                        <span>created 13 days ago</span>
                                     </div>
                                 </div>
                                 <div class="field description">A beautiful git client, made for Mac.</div>
