@@ -1,5 +1,11 @@
 <h1 align="center">why not?</h1>
 
+
+<img width="1160" height="653" alt="image" src="https://github.com/user-attachments/assets/dfdb9227-8850-4b87-80df-0e8ad8c9cbf3" />
+
+
+
+
 <div align="center">
   <img src="https://visitor-badge.laobi.icu/badge?page_id=aaravmaloo.aaravmaloo" />
 </div>
